@@ -30,7 +30,7 @@ Finally, I use a Logitech Triathlon mouse and like to have the configurable shor
 
 As an aside, here's my mouse gestures configuration: 
 
-![](blob:https://imgur.com/002c993e-b892-4a6c-96be-8351a798b743)
+![](https://i.imgur.com/Nw4VZII.png)
 
 Clicking the gesture button is play/pause, gesture left/right is volume down/up, and gesture up/down is maximize/switch windows. 
 
@@ -56,7 +56,8 @@ While that's installing, I get busy getting rid of Microsoft Clutter (TM) from m
 Chocolatey is pretty awesome and will let me install a whole whack of programs and packages on my machine with just a terminal command. 
 
 ```
-choco install -y firefox slack discord spotify vlc inkscape sharex gimp libreoffice 7zip.install git.install r rtools python3 jdk8 jre8 adobeair dotnetfx putty malwarebytes vscode foxitreader pdfcreator ccleaner
+choco install -y firefox slack discord spotify vlc inkscape sharex gimp libreoffice 7zip.install git.install \ 
+r rtools python3 jdk8 jre8 adobeair dotnetfx putty malwarebytes vscode foxitreader pdfcreator ccleaner mysql.workbench
 ```
 
 Brief rundown of apps and what they do:
@@ -83,8 +84,6 @@ Brief rundown of apps and what they do:
 - Foxit Reader - a PDF reader
 - PDF Creator - a PDF printer (i.e. writes PDF)
 - CCleaner - cleans registry and hard drive, occasionally useful
-
+- MySQL Workbench - a GUI for accessing SQL databases
 
 I'll need to download and install RStudio separately because I want the latest preview version. 
-
-
