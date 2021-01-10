@@ -90,9 +90,9 @@ I'll need to download and install RStudio separately because I want the latest p
 
 ## Install Firefox Addons
 
-- LastPass
-- uBlock Origin
-- Checker Plus for Gmail
+- LastPass - the password manager I've already been using
+- uBlock Origin - adblock!
+- Checker Plus for Gmail - an addon that helps me with Gmail
 
 ## Install RStudio
 
