@@ -172,6 +172,7 @@ pak::pkg_install(c(
   "rhub",
   "rstudioapi",
   "rtweet",
+  "rvest",
   "sass",
   "sever",
   "shinyjs",
