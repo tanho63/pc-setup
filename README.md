@@ -41,7 +41,7 @@ I abandoned left and right scroll in favour of mapping the ctrl-c and ctrl-v sho
 
 ## Install Chocolatey
 
-Chocolatey is a package manager that helps install software and packages from the command line, so that you're not navigating through boxes. 
+[Chocolatey](https://chocolatey.org/install) is a package manager that helps install software and packages from the command line, so that you're not navigating through boxes. 
 
 I press Start, type powershell, right click to run it as administrator, and then copy-paste this line from chocolatey's install page into the terminal prompt
 
