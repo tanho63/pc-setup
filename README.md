@@ -18,13 +18,26 @@ Set up local account, skipping through all the dialogues (choosing not to send M
 
 Open Windows Update and download/install updates. Reboot. Check for updates again. Reboot.
 
-## Install/update hardware drivers
+## Install/update hardware
 
 A new install means you need to update a bunch of drivers for the various hardware components so that my PC is running optimally. 
 
 The CPU/GPU in my case are AMD Ryzen 3600X and AMD Radeon 5600XT - that means installing the latest from [AMD](https://www.amd.com/en/support). 
 
 I'm also going to install the driver for the bluetooth/wifi card (TP-Link Archer TX3000E)
+
+Finally, I use a Logitech Triathlon mouse and like to have the configurable shortcuts and gestures, so will install the [appropriate software](https://www.logitech.com/en-ca/product/options).
+
+As an aside, here's my mouse gestures configuration: 
+
+![](https://i.imgur.com/Ng880CA.png)
+
+Clicking the gesture button is play/pause, gesture left/right is volume down/up, and gesture up/down is maximize/minimize windows. 
+
+![](https://i.imgur.com/i2mwciv.png)
+
+I abandoned left and right scroll in favour of mapping the ctrl-c and ctrl-v shortcuts to it - this lets me copy-paste a selection without moving my hand off the mouse!
+
 
 ## Install Chocolatey and Firefox
 
