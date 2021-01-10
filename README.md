@@ -51,7 +51,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 While that's installing, I get busy getting rid of Microsoft Clutter (TM) from my machine - uninstalling every possible tile from the start menu, getting rid of cortana and search bars from my taskbar. If I need to search, I can press start and then just type whatever I'm searching for on my PC. If I need web search, I pull up a browser and search there. 
 
-## Install STUFF
+## Install some SWEET STUFF with CHOCOLATEY
 
 Chocolatey is pretty awesome and will let me install a whole whack of programs and packages on my machine with just a terminal command. 
 
@@ -87,3 +87,114 @@ Brief rundown of apps and what they do:
 - MySQL Workbench - a GUI for accessing SQL databases
 
 I'll need to download and install RStudio separately because I want the latest preview version. 
+
+## Install Firefox Addons
+
+- LastPass
+- uBlock Origin
+- Checker Plus for Gmail
+
+## Install RStudio
+
+I like the [preview version](https://rstudio.com/products/rstudio/download/preview/) which has nicer/better features. 
+
+## Install R packages
+
+```
+install.packages("pak")
+pak::pkg_install(c(
+  "tidyverse",
+  "tidymodels",
+  "shiny",
+  "janitor",
+  "beepr",
+  "bench",
+  "blogdown",
+  "bookdown",
+  "broom",
+  "bs4Dash",
+  "checkmate",
+  "curl",
+  "crul",
+  "data.table",
+  "datapasta",
+  "DBI",
+  "dbplyr",
+  "devtools",
+  "httr",
+  "earth",
+  "echarts4r",
+  "extrafont",
+  "foreach",
+  "furrr",
+  "future",
+  "gargle",
+  "gert",
+  "gh",
+  "gfonts",
+  "gganimate",
+  "ggbeeswarm",
+  "gghighlight",
+  "ggimage",
+  "ggiraph",
+  "ggrepel",
+  "golem",
+  "googlesheets4",
+  "googledrive",
+  "gt",
+  "here",
+  "hms",
+  "Hmisc",
+  "hrbrthemes",
+  "httptest",
+  "jsonlite",
+  "knitr",
+  "learnr",
+  "lobstr",
+  "magick",
+  "magrittr",
+  "nflfastR",
+  "odbc",
+  "palmerpenguins",
+  "parsnip",
+  "pkgdown",
+  "plotly",
+  "praise",
+  "profvis",
+  "profmem",
+  "ps",
+  "sf",
+  "rappdirs",
+  "ragg",
+  "Rcpp",
+  "reactable",
+  "rlang",
+  "rhub",
+  "rstudioapi",
+  "rtweet",
+  "sass",
+  "sever",
+  "shinyjs",
+  "shinyMobile",
+  "shinyWidgets",
+  "showtext",
+  "skimr",
+  "slider",
+  "sloop",
+  "tensorflow",
+  "tidytext",
+  "tinytex",
+  "testthat",
+  "arrow",
+  "waiter",
+  "writexl",
+  "xaringan",
+  "gadenbuie/xaringanExtra",
+  "xgboost",
+  "yardstick",
+  "dynastyprocess/ffscrapr@dev",
+  "gadenbuie/rsthemes@main",
+  "tanho63/joker",
+  "hadley/emo"
+))
+```
