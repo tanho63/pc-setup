@@ -56,6 +56,35 @@ While that's installing, I get busy getting rid of Microsoft Clutter (TM) from m
 Chocolatey is pretty awesome and will let me install a whole whack of programs and packages on my machine with just a terminal command. 
 
 ```
-choco install -y firefox slack discord spotify vlc inkscape sharex gimp libreoffice 7zip.install git.install r rtools python3 jdk8 jre8 adobeair dotnetfx putty malwarebytes vscode foxitreader
+choco install -y firefox slack discord spotify vlc inkscape sharex gimp libreoffice 7zip.install git.install r rtools python3 jdk8 jre8 adobeair dotnetfx putty malwarebytes vscode foxitreader pdfcreator ccleaner
 ```
+
+Brief rundown of apps and what they do:
+
+- Firefox - cause Edge sucks
+- Slack, Discord - communication platforms
+- Spotify - music service
+- VLC - video player
+- inkscape - vector graphics editor
+- GIMP - bitmap graphics editor (i.e. photoshop equiv)
+- sharex - screen recorder
+- libreoffice - free Microsoft Office suite
+- 7zip - app for extracting and compressing zipped files
+- git - version control command line software
+- R - my baby
+- rtools - helps my baby
+- python3 - a dependency, also helpful for some other stuff
+- jdk8 and jre8 - Java dev and runtimes, useful dependencies to install now
+- adobe air - useful dependency to install now
+- .Net 4.7 - useful dependency for various programs
+- putty - a tool for connecting to remote servers via SSH
+- malwarebytes - a fixit antivirus tool (less good for active defense)
+- Visual Studio Code - for the few bits of non-R code that I need to look at and don't want to look at in RStudio
+- Foxit Reader - a PDF reader
+- PDF Creator - a PDF printer (i.e. writes PDF)
+- CCleaner - cleans registry and hard drive, occasionally useful
+
+
+I'll need to download and install RStudio separately because I want the latest preview version. 
+
 
