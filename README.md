@@ -16,7 +16,7 @@ Boot the USB installation media, format the drive (I'm using the NVME drive) and
 
 Set up local account, skipping through all the dialogues (choosing not to send Microsoft your data, not using Cortana, not using location services etc). 
 
-Open Windows Update and download/install updates. Reboot.
+Open Windows Update and download/install updates. Reboot. Check for updates again. Reboot.
 
 ## Install/update hardware drivers
 
