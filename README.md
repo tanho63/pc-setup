@@ -101,8 +101,7 @@ I like the [preview version](https://rstudio.com/products/rstudio/download/previ
 ## Install R packages
 
 ```
-install.packages("pak")
-pak::pkg_install(c(
+install.packages(c(
   "tidyverse",
   "tidymodels",
   "shiny",
@@ -185,17 +184,23 @@ pak::pkg_install(c(
   "tensorflow",
   "tidytext",
   "tinytex",
-  "testthat",
   "arrow",
+  "testthat",
   "waiter",
   "writexl",
   "xaringan",
-  "gadenbuie/xaringanExtra",
   "xgboost",
-  "yardstick",
-  "dynastyprocess/ffscrapr@dev",
-  "gadenbuie/rsthemes@main",
-  "tanho63/joker",
-  "hadley/emo"
+  "yardstick"
 ))
+
+purrr::walk(
+  c(  
+    "gadenbuie/xaringanExtra",
+    "dynastyprocess/ffscrapr@dev",
+    "gadenbuie/rsthemes@main",
+    "tanho63/joker",
+    "hadley/emo"
+    ),
+  remotes::install_github,
+  upgrade = "never")
 ```
