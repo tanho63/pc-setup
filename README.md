@@ -4,7 +4,7 @@ Documenting a from-scratch installation and configuration of Windows 10 for a da
 
 ## Hardware
 
-A home-built PC with this [parts list](https://ca.pcpartpicker.com/list/ZNdTt8).
+A home-built PC with this [parts list](https://ca.pcpartpicker.com/list/fqnDht).
 
 ## Windows 10 Installation
 
