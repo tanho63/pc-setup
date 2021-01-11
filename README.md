@@ -56,7 +56,7 @@ While that's installing, I get busy getting rid of Microsoft Clutter (TM) from m
 Chocolatey is pretty awesome and will let me install a whole whack of programs and packages on my machine with just a terminal command. 
 
 ```
-choco install -y firefox slack discord spotify vlc inkscape sharex gimp libreoffice 7zip.install git.install r rtools python3 jdk8 jre8 adobeair dotnetfx putty malwarebytes vscode foxitreader pdfcreator ccleaner mysql.workbench steam
+choco install -y firefox slack discord spotify vlc inkscape sharex gimp libreoffice 7zip.install git.install r rtools python3 jdk8 jre8 adobeair silverlight dotnetfx vcredist-all putty.install malwarebytes vscode foxitreader pdfcreator ccleaner mysql.workbench steam obs-studio.install zoom
 ```
 
 Brief rundown of apps and what they do:
@@ -76,6 +76,8 @@ Brief rundown of apps and what they do:
 - python3 - a dependency, also helpful for some other stuff
 - jdk8 and jre8 - Java dev and runtimes, useful dependencies to install now
 - adobe air - useful dependency to install now
+- silverlight - dependency
+- vcredist -dependencies
 - .Net 4.7 - useful dependency for various programs
 - putty - a tool for connecting to remote servers via SSH
 - malwarebytes - a fixit antivirus tool (less good for active defense)
@@ -85,6 +87,8 @@ Brief rundown of apps and what they do:
 - CCleaner - cleans registry and hard drive, occasionally useful
 - MySQL Workbench - a GUI for accessing SQL databases
 - Steam - for games!
+- OBS - stream software
+- Zoom - video calls
 
 I'll need to download and install RStudio separately because I want the latest preview version. 
 
