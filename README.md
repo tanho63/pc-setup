@@ -61,6 +61,8 @@ choco install -y firefox slack discord spotify vlc inkscape sharex gimp libreoff
 
 Brief rundown of apps and what they do:
 
+*Daily usage*
+
 - Firefox - cause Edge sucks
 - Slack, Discord - communication platforms
 - Spotify - music service
@@ -69,7 +71,17 @@ Brief rundown of apps and what they do:
 - GIMP - bitmap graphics editor (i.e. photoshop equiv)
 - sharex - screen recorder
 - libreoffice - free Microsoft Office suite
-- 7zip - app for extracting and compressing zipped files
+- 7zip - extracting and compressing zipped files
+- malwarebytes - a fixit antivirus tool (less good for active defense)
+- Foxit Reader - a PDF reader
+- PDF Creator - a PDF printer (i.e. writes PDF)
+- CCleaner - cleans registry and hard drive, occasionally useful
+- Steam - for games!
+- OBS - stream software
+- Zoom - video calls
+
+*Programming & Dependencies*
+
 - git - version control command line software
 - R - my baby
 - rtools - helps my baby
@@ -80,17 +92,10 @@ Brief rundown of apps and what they do:
 - vcredist -dependencies
 - .Net 4.7 - useful dependency for various programs
 - putty - a tool for connecting to remote servers via SSH
-- malwarebytes - a fixit antivirus tool (less good for active defense)
 - Visual Studio Code - for the few bits of non-R code that I need to look at and don't want to look at in RStudio
-- Foxit Reader - a PDF reader
-- PDF Creator - a PDF printer (i.e. writes PDF)
-- CCleaner - cleans registry and hard drive, occasionally useful
 - MySQL Workbench - a GUI for accessing SQL databases
-- Steam - for games!
-- OBS - stream software
-- Zoom - video calls
 
-I'll need to download and install RStudio separately because I want the latest preview version. 
+I'll need to download and install RStudio separately because I want the latest preview version (all them rainbow bracketses!) but you can also install RStudio via Chocolatey if you prefer the stable version.
 
 ## Install Firefox Addons
 
