@@ -113,6 +113,11 @@ I like the [preview version](https://rstudio.com/products/rstudio/download/previ
 ## Install R packages
 
 ```
+
+  r <- getOption("repos")
+  r["CRAN"] <- "https://packagemanager.rstudio.com/all/latest"
+  options(repos = r)
+
 install.packages(
   c("arrow", "beepr", "bench", "blogdown", "bookdown", "broom", 
     "bs4Dash", "checkmate", "crul", "curl", "data.table", "datapasta", 
