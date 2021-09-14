@@ -84,6 +84,7 @@ Brief rundown of apps and what they do:
 
 - git - version control command line software
 - R - my baby
+- R.studio - my baby's UI
 - rtools - helps my baby
 - python3 - a dependency, also helpful for some other stuff
 - jdk8 and jre8 - Java dev and runtimes, useful dependencies to install now
@@ -98,7 +99,7 @@ Brief rundown of apps and what they do:
 - docker-desktop - running the containers!
 - wsl2 - Windows Subsystem for Linux 2 - allows Linux based docker to run on windows!
 
-I'll need to download and install RStudio separately because I want the latest preview version (all them rainbow bracketses!) but you can also install RStudio via Chocolatey if you prefer the stable version.
+~~I'll need to download and install RStudio separately because I want the latest preview version (all them rainbow bracketses!) but you can also install RStudio via Chocolatey if you prefer the stable version.~~
 
 ## Install Firefox Addons
 
