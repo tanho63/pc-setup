@@ -56,7 +56,7 @@ While that's installing, I get busy getting rid of Microsoft Clutter (TM) from m
 Chocolatey is pretty awesome and will let me install a whole whack of programs and packages on my machine with just a terminal command. 
 
 ```
-choco install -y firefox slack discord spotify vlc inkscape sharex gimp libreoffice-fresh 7zip.install git.install r rtools python3 jdk8 jre8 adobeair silverlight dotnetfx vcredist-all putty.install malwarebytes vscode foxitreader pdfcreator ccleaner mysql.workbench steam obs-studio.install zoom docker-cli docker-desktop wsl2
+choco install -y firefox slack discord spotify vlc inkscape sharex gimp libreoffice-fresh 7zip.install git.install r rtools python3 jdk8 jre8 adobeair silverlight dotnetfx vcredist-all putty.install malwarebytes vscode foxitreader pdfcreator ccleaner mysql.workbench steam obs-studio.install zoom docker-cli docker-desktop wsl2 r.studio
 ```
 
 Brief rundown of apps and what they do:
