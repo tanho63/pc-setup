@@ -56,7 +56,7 @@ While that's installing, I get busy getting rid of Microsoft Clutter (TM) from m
 Chocolatey is pretty awesome and will let me install a whole whack of programs and packages on my machine with just a terminal command. 
 
 ```
-choco install -y firefox slack discord spotify vlc inkscape sharex gimp libreoffice-fresh 7zip.install git.install r rtools python3 jdk8 jre8 adobeair silverlight dotnetfx vcredist-all putty.install malwarebytes vscode foxitreader pdfcreator ccleaner mysql.workbench steam obs-studio.install zoom docker-cli docker-desktop wsl2 r.studio
+choco install -y firefox slack discord spotify vlc inkscape sharex gimp libreoffice-fresh 7zip.install git.install r rtools python3 jdk8 jre8 silverlight dotnetfx vcredist-all putty.install malwarebytes vscode foxitreader pdfcreator ccleaner mysql.workbench steam obs-studio.install zoom docker-cli docker-desktop wsl2 r.studio
 ```
 
 Brief rundown of apps and what they do:
@@ -88,7 +88,6 @@ Brief rundown of apps and what they do:
 - rtools - helps my baby
 - python3 - a dependency, also helpful for some other stuff
 - jdk8 and jre8 - Java dev and runtimes, useful dependencies to install now
-- adobe air - useful dependency to install now
 - silverlight - dependency
 - vcredist -dependencies
 - .Net 4.7 - useful dependency for various programs
@@ -103,13 +102,13 @@ Brief rundown of apps and what they do:
 
 ## Install Firefox Addons
 
-- LastPass - the password manager I've already been using
+- BitWarden - the password manager I've already been using
 - uBlock Origin - adblock!
 - Checker Plus for Gmail - an addon that helps me with Gmail
 
 ## Install RStudio
 
-I like the [preview version](https://rstudio.com/products/rstudio/download/preview/) which has nicer/better features. 
+~~I like the [preview version](https://rstudio.com/products/rstudio/download/preview/) which has nicer/better features.~~
 
 ## Install R packages
 
@@ -145,3 +144,8 @@ purrr::walk(
   remotes::install_github,
   upgrade = "never")
 ```
+
+# Revisions
+
+- 2021-09-15 - now uses choco to install RStudio, since the build of RS I wanted is now available via choco (1.4)
+- 2021-09-29 - revisions to choco desktop list
