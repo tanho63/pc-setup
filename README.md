@@ -98,17 +98,13 @@ Brief rundown of apps and what they do:
 - docker-desktop - running the containers!
 - wsl2 - Windows Subsystem for Linux 2 - allows Linux based docker to run on windows!
 
-~~I'll need to download and install RStudio separately because I want the latest preview version (all them rainbow bracketses!) but you can also install RStudio via Chocolatey if you prefer the stable version.~~
+~~I'll need to download and install RStudio separately because I want the latest preview version (all them rainbow bracketses!) but you can also install RStudio via Chocolatey if you prefer the stable version.~~ now install RS via choco, features I wanted (rainbow parens, memory tracking, command palette etc) are now on the public release
 
 ## Install Firefox Addons
 
-- BitWarden - the password manager I've already been using
+- ~~LastPass~~ BitWarden, my password manager of choice
 - uBlock Origin - adblock!
 - Checker Plus for Gmail - an addon that helps me with Gmail
-
-## Install RStudio
-
-~~I like the [preview version](https://rstudio.com/products/rstudio/download/preview/) which has nicer/better features.~~
 
 ## Install R packages
 
@@ -119,7 +115,8 @@ Brief rundown of apps and what they do:
   options(repos = r)
 
 install.packages(
-  c("arrow", "beepr", "bench", "blogdown", "bookdown", "broom", 
+  c(
+    "arrow", "beepr", "bench", "blogdown", "bookdown", "broom", 
     "bs4Dash", "checkmate", "crul", "curl", "data.table", "datapasta", 
     "DBI", "dbplyr", "devtools", "earth", "echarts4r", "extrafont", 
     "foreach", "furrr", "future", "gargle", "gert", "gfonts", "gganimate", 
@@ -148,4 +145,4 @@ purrr::walk(
 # Revisions
 
 - 2021-09-15 - now uses choco to install RStudio, since the build of RS I wanted is now available via choco (1.4)
-- 2021-09-29 - revisions to choco desktop list
+- 2021-09-29 - revisions to choco desktop list and other general
