@@ -109,40 +109,118 @@ Brief rundown of apps and what they do:
 
 ## Install R packages
 
+<details>
+  <summary> A long list of packages </summary>
+
+```
+install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+r <- getOption("repos")
+r["CRAN"] <- "https://packagemanager.rstudio.com/all/latest"
+options(repos = r)
+
+c("arrow",
+  "beepr",
+  "bench",
+  "blogdown",
+  "bookdown",
+  "broom",
+  "bs4Dash",
+  "checkmate",
+  "crul",
+  "curl",
+  "data.table",
+  "datapasta",
+  "DBI",
+  "dbplyr",
+  "devtools",
+  "earth",
+  "echarts4r",
+  "extrafont",
+  "foreach",
+  "furrr",
+  "future",
+  "gargle",
+  "gert",
+  "gfonts",
+  "gganimate",
+  "ggbeeswarm",
+  "gghighlight",
+  "ggimage",
+  "ggiraph",
+  "ggrepel",
+  "gh",
+  "golem",
+  "googledrive",
+  "googlesheets4",
+  "gt",
+  "here",
+  "Hmisc",
+  "hms",
+  "hrbrthemes",
+  "httptest",
+  "httr",
+  "janitor",
+  "jsonlite",
+  "knitr",
+  "learnr",
+  "lobstr",
+  "magick",
+  "magrittr",
+  "odbc",
+  "parsnip",
+  "pkgdown",
+  "plotly",
+  "praise",
+  "profmem",
+  "profvis",
+  "ps",
+  "ragg",
+  "rappdirs",
+  "Rcpp",
+  "reactable",
+  "rhub",
+  "rlang",
+  "rstudioapi",
+  "rtweet",
+  "rvest",
+  "sever",
+  "sf",
+  "shiny",
+  "shinyjs",
+  "shinyMobile",
+  "shinyWidgets",
+  "showtext",
+  "skimr",
+  "slider",
+  "sloop",
+  "tensorflow",
+  "testthat",
+  "tidymodels",
+  "tidytext",
+  "tidyverse",
+  "tinytex",
+  "waiter",
+  "writexl",
+  "xaringan",
+  "xgboost",
+  "yardstick",
+  # these ones from GitHub, not CRAN
+  "nflverse/nflfastR",
+  "nflverse/nflreadr",
+  "ffverse/ffscrapr@dev",
+  "ffverse/ffsimulator@dev",
+  "ffverse/ffpros@dev",
+  "gadenbuie/rsthemes@main",
+  "tanho63/tantastic",
+  "tanho63/joker",
+  "hadley/emo",
+  "gadenbuie/xaringanExtra"
+) |> pak::pak()
+
 ```
 
-  r <- getOption("repos")
-  r["CRAN"] <- "https://packagemanager.rstudio.com/all/latest"
-  options(repos = r)
-
-install.packages(
-  c(
-    "arrow", "beepr", "bench", "blogdown", "bookdown", "broom", 
-    "bs4Dash", "checkmate", "crul", "curl", "data.table", "datapasta", 
-    "DBI", "dbplyr", "devtools", "earth", "echarts4r", "extrafont", 
-    "foreach", "furrr", "future", "gargle", "gert", "gfonts", "gganimate", 
-    "ggbeeswarm", "gghighlight", "ggimage", "ggiraph", "ggrepel", 
-    "gh", "golem", "googledrive", "googlesheets4", "gt", "here", 
-    "Hmisc", "hms", "hrbrthemes", "httptest", "httr", "janitor", 
-    "jsonlite", "knitr", "learnr", "lobstr", "magick", "magrittr", 
-    "nflfastR", "odbc", "palmerpenguins", "parsnip", "pkgdown", "plotly", 
-    "praise", "profmem", "profvis", "ps", "ragg", "rappdirs", "Rcpp", 
-    "reactable", "rhub", "rlang", "rstudioapi", "rtweet", "rvest", 
-    "sass", "sever", "sf", "shiny", "shinyjs", "shinyMobile", "shinyWidgets", 
-    "showtext", "skimr", "slider", "sloop", "tensorflow", "testthat", 
-    "tidymodels", "tidytext", "tidyverse", "tinytex", "waiter", "writexl", 
-    "xaringan", "xgboost", "yardstick"))
-
-purrr::walk(
-  c("gadenbuie/xaringanExtra",
-    "dynastyprocess/ffscrapr@dev",
-    "gadenbuie/rsthemes@main",
-    "tanho63/joker",
-    "hadley/emo"),
-  remotes::install_github,
-  upgrade = "never")
-```
-
+  </summary>
+  
 # Revisions
 
 - 2021-09-15 - now uses choco to install RStudio, since the build of RS I wanted is now available via choco (1.4)
