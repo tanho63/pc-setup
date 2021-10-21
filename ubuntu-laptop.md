@@ -4,7 +4,7 @@ This page will document setting up my new Framework Laptop with Ubuntu 21.04 ðŸŽ
 
 I'm extremely excited about [Framework](https://frame.work/) and the idea of a modern, repairable, modular laptop - the ethos is awesome! I think it's a great opportunity to embrace the independence and also go with a Linux install instead of Windows - if this goes well enough I'll probably start dualbooting Windows/Linux on my main desktop also ðŸ¤“
 
-I'll live stream this on Twitch: https://twitch.tv/tanho_ and possibly post a recording afterwards
+I'll live stream this on Twitch: [https://twitch.tv/tanho_](https://twitch.tv/tanho_) and possibly post a recording afterwards
 
 ## Parts/Specs
 
