@@ -34,7 +34,7 @@ I might enjoy this enough to try Manjaro/Arch someday but I'll give this a go fi
 Ubuntu 21.04 install guides from framework https://community.frame.work/t/ubuntu-21-04-on-the-framework-laptop/2722
 
 ## Other things
-Logitech Triathlon mouse drivers 
-Power management?
+Logitech Triathlon mouse drivers - logid ?
+Power management - ?
 
 See other stuff from main/windows install list
