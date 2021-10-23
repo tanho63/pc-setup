@@ -194,3 +194,30 @@ RStudio via https://www.rstudio.com/products/rstudio/#rstudio-desktop was also s
   sudo snap install slack --classic
   sudo snap install zoom-client --classic
   ```
+
+## Load project repos
+
+Quickly loading project stuff from GitHub
+  
+```
+pkg<- c(
+  "nflverse/nflreadr",
+  "nflverse/nflfastR",
+  "nflverse/nflfastR-data",
+  "nflverse/nflfastR-roster",
+  "nflverse/status",
+  "ffverse/ffscrapr",
+  "ffverse/ffsimulator",
+  "ffverse/ffpros",
+  "ffverse/ffexpectedpoints",
+  "dynastyprocess/research",
+  "dynastyprocess/apps",
+  "dynastyprocess/data",
+  "dynastyprocess/db",
+  "dynastyprocess/usetheprocess",
+  "tanho63/tantastic",
+  "tanho63/tanho.ca",
+  "tanho63/joker",
+  "tanho63/office_hours"
+) |> purrr::walk(~usethis::create_from_github(.x,"Documents/GitHub",open = FALSE,rstudio = FALSE))
+```
