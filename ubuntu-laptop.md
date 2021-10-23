@@ -221,3 +221,18 @@ pkg<- c(
   "tanho63/office_hours"
 ) |> purrr::walk(~usethis::create_from_github(.x,"Documents/GitHub",open = FALSE,rstudio = FALSE))
 ```
+
+## Fonts
+  
+Adding a few favourite fonts from Google Fonts:
+  
+  - IBM Plex Sans
+  - IBM Plex Sans Condensed
+  - Bai Jamjuree
+  - Jost
+  - JetBrains Mono (IDE font of choice!)
+  - Fira Sans
+  - Fira Sans Condensed
+  - Titillium Web
+  - Work Sans
+ 
