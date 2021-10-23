@@ -51,15 +51,17 @@ https://cran.rstudio.com/bin/linux/ubuntu/ for the base R installation (but reme
 
 RStudio via https://www.rstudio.com/products/rstudio/#rstudio-desktop was also straightforward enough
 
-<details>
-  <summary>R packages</summary>
+
   
-  ```{r}
+  ```r
       install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
       r <- getOption("repos")
       r["CRAN"] <- "https://packagemanager.rstudio.com/all/latest"
       options(repos = r)
-
+  ```
+ <details>
+  <summary>R packages</summary> 
+  ```r
       pkgs <- c("arrow",
         "beepr",
         "bench",
@@ -159,7 +161,9 @@ RStudio via https://www.rstudio.com/products/rstudio/#rstudio-desktop was also s
         "tanho63/joker",
         "hadley/emo",
         "gadenbuie/xaringanExtra")
-   
+   ```
+              </details>
+   ```r
   # loop through and find Linux dependencies
    lapply(pkgs, function(x) pak::pkg_system_requirements(x, sudo = TRUE, os_release = 20.04)) |> 
      unlist() |> 
