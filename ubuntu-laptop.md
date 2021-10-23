@@ -45,23 +45,22 @@ Fingerprint install was frustrating, eventually did the (admittedly dumb) "trust
 ## Mouse configs
 Logitech Triathlon mouse drivers - inistalled [logiops](https://github.com/PixlOne/logiops) with `sudo snap install logiops` and then configured all the gestures myself. Gestures here: [https://github.com/tanho63/pc-setup/blob/main/logiops.cfg] and mostly a holdover from what I use on Windows also. 
 
-## Install R/RStudio/fav apps
+## Install R/RStudio
 
 https://cran.rstudio.com/bin/linux/ubuntu/ for the base R installation (but remembered to take r-base-dev also!)
 
 RStudio via https://www.rstudio.com/products/rstudio/#rstudio-desktop was also straightforward enough
 
-
+## Install R packages
   
-  ```r
-      install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
-      r <- getOption("repos")
-      r["CRAN"] <- "https://packagemanager.rstudio.com/all/latest"
-      options(repos = r)
-  ```
- <details>
-  <summary>R packages</summary> 
-  ```r
+```r
+  install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+```
+
+<details>
+<summary>R packages</summary> 
+
+```r
       pkgs <- c("arrow",
         "beepr",
         "bench",
@@ -161,15 +160,37 @@ RStudio via https://www.rstudio.com/products/rstudio/#rstudio-desktop was also s
         "tanho63/joker",
         "hadley/emo",
         "gadenbuie/xaringanExtra")
-   ```
-              </details>
-   ```r
+ ```
+</details>
+   
+```r
   # loop through and find Linux dependencies
    lapply(pkgs, function(x) pak::pkg_system_requirements(x, sudo = TRUE, os_release = 20.04)) |> 
      unlist() |> 
      unique() |>
      cat(sep = "\n")
-  # copy-paste into terminal so that I have sudo
+  # copy-paste into terminal and execute as sudo
   
   pak::pak(pkgs)
+```
+
+## Install fav apps
+  
+  - Discord
+  - Slack
+  - Spotify
+  - LibreOffice
+  - Typora
+  - OBS Studio
+  - GIMP
+  - Inkscape
+  - VS Code
+  - Zoom
+  
+  mostly via snap
+  
+  ```
+  sudo snap install discord spotify libreoffice typora obs-studio inkscape code
+  sudo snap install slack --classic
+  sudo snap install zoom-client --classic
   ```
