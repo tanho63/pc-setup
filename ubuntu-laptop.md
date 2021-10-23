@@ -43,7 +43,7 @@ Straightforward enough with Ubuntu 21.04 install guides from framework https://c
 Fingerprint install was frustrating, eventually did the (admittedly dumb) "trust a user on the internet" thing and just installed from https://github.com/cfsmp3/linux_framework_laptop/tree/master/fingerprint_reader, which mostly worked. I did have to disable log-on-with-fingerprint and now it's mostly useful within sudo, which is also fine by me.
 
 ## Mouse configs
-Logitech Triathlon mouse drivers - inistalled [logiops](https://github.com/PixlOne/logiops) with `sudo snap install logiops` and then configured all the gestures myself. Gestures here: [https://github.com/tanho63/pc-setup/blob/main/logiops.cfg] and mostly a holdover from what I use on Windows also. 
+Logitech Triathlon mouse drivers - inistalled [logiops](https://github.com/PixlOne/logiops) and then configured all the gestures myself. Gestures here: [https://github.com/tanho63/pc-setup/blob/main/logiops.cfg] and mostly a holdover from what I use on Windows also. 
 
 ## Install R/RStudio
 
