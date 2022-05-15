@@ -5,6 +5,7 @@ mypkgs <- pak::pkg_list()
 saveRDS(mypkgs, "mypkgs.rds")
 
 ### NOW UPGRADE R
+### (Tan: I like `choco install -y r` in powershell here, see tanho63/pc-setup/windows-setup.md)
 
 ### AFTER UPGRADE
 mypkgs <- readRDS("mypkgs.rds")
@@ -13,6 +14,7 @@ install.packages(inst, type = "binary")
 
 ### Most packages should be back let's check what we have now
 now <- pak::pkg_list()
+
 
 ### Are there packages missing (because they were'nt installed from CRAN)
 missing <- mypkgs[!mypkgs$package %in% now$package, ]
