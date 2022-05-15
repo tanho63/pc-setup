@@ -6,7 +6,7 @@ saveRDS(mypkgs, "mypkgs.rds")
 
 ### NOW UPGRADE R
 ### Tan: I like choco/powershell here, and may as well upgrade rstudio at same time
-## choco install -y r r.studio
+## choco install -y r r.studio r.tools
 
 ### AFTER UPGRADE
 mypkgs <- readRDS("mypkgs.rds")
