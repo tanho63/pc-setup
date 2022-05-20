@@ -10,7 +10,7 @@ saveRDS(mypkgs, "mypkgs.rds")
 
 ### AFTER UPGRADE
 mypkgs <- readRDS("mypkgs.rds")
-inst <- mypkgs$package[mypkgs$repository == "CRAN"]
+inst <- mypkgs$package[mypkgs$repository %in% c("CRAN", "RSPM")]
 install.packages(inst, type = "binary")
 
 ### Most packages should be back let's check what we have now
