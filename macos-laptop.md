@@ -29,8 +29,8 @@ It comes pre-installed with MacOS Monterey 12.3, so first order of business is u
   - `brew tap homebrew/cask-fonts`
   - `brew install --cask font-ibm-plex font-bai-jamjuree font-jetbrains-mono font-work-sans font-open-sans`
 - stuff i'm trying from garrick:
-  - `brew install bit-git bat nat tldr node+`
-  - `brew install --cask flycut kap irvue`
+  - `brew install bit-git bat nat tldr node`
+  - `brew install --cask flycut kap alt-tab`
   
 ## Assorted config
 Mostly stolen from Garrick
