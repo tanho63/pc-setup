@@ -23,14 +23,17 @@ It comes pre-installed with MacOS Monterey 12.3, so first order of business is u
 - `xcode-select --install` 
 - homebrew: https://brew.sh/
 - Basics
-  - `brew install r git gh docker docker-compose svn`
-  - `brew install --cask slack discord vscode firefox Alfred rstudio docker figma obsidian`
+  - manual install M1 version of R https://cloud.r-project.org/bin/macosx/ 
+  - `brew install git gh docker docker-compose svn`
+  - `brew install --cask slack discord vscode firefox rstudio docker obsidian`
 - Fonts
   - `brew tap homebrew/cask-fonts`
   - `brew install --cask font-ibm-plex font-bai-jamjuree font-jetbrains-mono font-work-sans font-open-sans`
-- stuff i'm trying from garrick:
+- Utils
+  - `brew install --cask flycut kap shottr alt-tab` these are all awesome at their jobs - better copypaste, screen recording, screen capture, and window switching
+- Utils from Garrick I'm not yet sure on:
   - `brew install bit-git bat nat tldr node`
-  - `brew install --cask flycut kap alt-tab`
+  - `brew install --cask Alfred figma`
   
 ## Assorted config
 Mostly stolen from Garrick
@@ -43,3 +46,5 @@ Mostly stolen from Garrick
 > ↖️ Put Display to Sleep (and add require password immediately)
 
 Mouse software https://www.logitech.com/en-ca/product/options
+
+Configured shortcuts like my windows guide: https://github.com/tanho63/pc-setup/blob/main/windows-desktop.md#installupdate-hardware
