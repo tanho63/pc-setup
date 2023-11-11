@@ -1,0 +1,22 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$line_break\
+$character
+"""
+[line_break]
+disabled = false
+[username]
+show_always = true
+format = '[$user]($style)@'
+[hostname]
+ssh_only = false
+ssh_symbol='☁️ '
+style = '#0A8D45'
+format = '[$ssh_symbol$hostname⚽ ]($style): '
