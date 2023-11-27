@@ -47,3 +47,18 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 cd TAN_HOME
 wget -O /etc/logid.cfg https://github.com/tanho63/pc-setup/raw/main/logiops.cfg
+
+# disable ubuntu advertising
+wget https://github.com/Skyedra/UnspamifyUbuntu/raw/master/fake-ubuntu-advantage-tools/fake-ubuntu-advantage-tools.deb
+apt-get install -y fake-ubuntu-advantage-tools.deb
+sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/20apt-esm-hook.conf.disabled
+sudo sed -Ezi.orig \
+  -e 's/(def _output_esm_service_status.outstream, have_esm_service, service_type.:\n)/\1    return\n/' \
+  -e 's/(def _output_esm_package_alert.*?\n.*?\n.:\n)/\1    return\n/' \
+  /usr/lib/update-notifier/apt_check.py
+sudo /usr/lib/update-notifier/update-motd-updates-available --force
+sudo sed -i 's/^ENABLED=.*/ENABLED=0/' /etc/default/motd-news
+rm /var/lib/ubuntu-advantage/messages/motd-esm-announce
+
+
+
