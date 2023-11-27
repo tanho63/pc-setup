@@ -21,6 +21,10 @@ TAN_HOME=/home/tan
 curl -fsSL https://github.com/rocker-org/rocker-versioned2/raw/master/scripts/install_R_source.sh | sh
 curl -fsSL https://github.com/rocker-org/rocker-versioned2/raw/master/scripts/setup_R.sh | sh
 
+sudo apt-get install gdebi
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.09.1-494-amd64.deb
+gdebi rstudio-2023.09.1-494-amd64.deb
+
 # Using snap to install all the regular stuff
 sudo snap install slack discord spotify obs-studio inkscape firefox chromium
 
