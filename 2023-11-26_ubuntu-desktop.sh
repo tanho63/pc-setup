@@ -13,7 +13,7 @@ set -euxo pipefail
 apt-get update -q && apt-get upgrade -q
 
 # Using snap to install all the regular stuff
-sudo snap install slack discord spotify obs-studio inkscape firefox chromium steam
+sudo snap install slack discord spotify vlc obs-studio gimp inkscape firefox chromium steam 
 
 # Shamelessly installing R from rocker scripts because I can
 R_HOME=/user/local/lib/R
