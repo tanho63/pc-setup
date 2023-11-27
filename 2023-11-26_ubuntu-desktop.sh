@@ -13,7 +13,7 @@ set -euxo pipefail
 apt-get update -q && apt-get upgrade -q
 
 # Using snap to install all the regular stuff
-sudo snap install slack discord spotify obs-studio inkscape firefox chromium
+sudo snap install slack discord spotify obs-studio inkscape firefox chromium steam
 
 # Shamelessly installing R from rocker scripts because I can
 R_HOME=/user/local/lib/R
@@ -31,6 +31,11 @@ gdebi rstudio-2023.09.1-494-amd64.deb
 
 # Tailscale has been awesome for homelab/vpn
 curl -fsSL https://tailscale.com/install.sh | bash
+
+# Starship
+curl -sS https://starship.rs/install.sh | sh
+echo 'eval "$(starship init bash)"' >> $TAN_HOME/.bashrc
+wget -0 $TAN_HOME/.config/starship.toml https://github.com/tanho63/pc-setup/raw/main/starship.toml
 
 # Install logiops for mouse stuff
 sudo apt-get install -q build-essential cmake pkg-config libevdev-dev libudev-dev libconfig++-dev libglib2.0-dev
