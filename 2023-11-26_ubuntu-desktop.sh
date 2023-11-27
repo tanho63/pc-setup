@@ -11,6 +11,9 @@
 # Start by updating the existing packages
 apt-get update -q && apt-get upgrade -q
 
+# Using snap to install all the regular stuff
+sudo snap install slack discord spotify obs-studio inkscape firefox chromium
+
 # Shamelessly installing R from rocker scripts because I can
 R_HOME=/user/local/lib/R
 TZ=Etc/UTC
@@ -25,9 +28,6 @@ sudo apt-get install gdebi
 wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.09.1-494-amd64.deb
 gdebi rstudio-2023.09.1-494-amd64.deb
 
-# Using snap to install all the regular stuff
-sudo snap install slack discord spotify obs-studio inkscape firefox chromium
-
 # Tailscale has been awesome for homelab/vpn
 curl -fsSL https://tailscale.com/install.sh | sh
 
@@ -41,4 +41,3 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 cd TAN_HOME
 wget -O /etc/logid.cfg https://github.com/tanho63/pc-setup/raw/main/logiops.cfg
-
