@@ -8,6 +8,7 @@
 # 
 # I realize this is kind of like what Nix does. I might explore that in a future iteration. 
 
+set -euxo pipefail
 # Start by updating the existing packages
 apt-get update -q && apt-get upgrade -q
 
