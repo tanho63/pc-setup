@@ -8,9 +8,9 @@
 # 
 # I realize this is kind of like what Nix does. I might explore that in a future iteration. 
 
-set -euxo pipefail
+
 # Start by updating the existing packages
-apt-get update -q && apt-get upgrade -q
+apt-get update -qq && apt-get upgrade -qq
 
 # Using snap to install all the regular stuff
 sudo snap install slack discord spotify vlc obs-studio gimp inkscape firefox chromium steam 
@@ -22,10 +22,12 @@ CRAN=https://p3m.dev/cran/__linux__/jammy/latest
 LANG=en_US.UTF-8
 TAN_HOME=/home/tan
 
+set -euxo pipefail
+
 curl -fsSL https://github.com/rocker-org/rocker-versioned2/raw/master/scripts/install_R_source.sh | bash
 curl -fsSL https://github.com/rocker-org/rocker-versioned2/raw/master/scripts/setup_R.sh | bash
 
-sudo apt-get install gdebi
+apt-get install gdebi-core
 wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.09.1-494-amd64.deb
 gdebi rstudio-2023.09.1-494-amd64.deb
 
@@ -38,14 +40,15 @@ echo 'eval "$(starship init bash)"' >> $TAN_HOME/.bashrc
 wget -0 $TAN_HOME/.config/starship.toml https://github.com/tanho63/pc-setup/raw/main/starship.toml
 
 # Install logiops for mouse stuff
-sudo apt-get install -q build-essential cmake pkg-config libevdev-dev libudev-dev libconfig++-dev libglib2.0-dev
+sudo apt-get install -qq build-essential cmake pkg-config libevdev-dev libudev-dev libconfig++-dev libglib2.0-dev
 wget -O logiops.tar.gz https://github.com/PixlOne/logiops/archive/main.tar.gz
 tar -xvzf logiops.tar.gz
 mkdir -p logiops-main/build
 cd logiops-main/build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make
-cd TAN_HOME
+make install
+cd $TAN_HOME
 wget -O /etc/logid.cfg https://github.com/tanho63/pc-setup/raw/main/logiops.cfg
 
 # disable ubuntu advertising
@@ -59,6 +62,3 @@ sudo sed -Ezi.orig \
 sudo /usr/lib/update-notifier/update-motd-updates-available --force
 sudo sed -i 's/^ENABLED=.*/ENABLED=0/' /etc/default/motd-news
 rm /var/lib/ubuntu-advantage/messages/motd-esm-announce
-
-
-
