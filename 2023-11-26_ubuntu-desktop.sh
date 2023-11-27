@@ -21,15 +21,15 @@ CRAN=https://p3m.dev/cran/__linux__/jammy/latest
 LANG=en_US.UTF-8
 TAN_HOME=/home/tan
 
-curl -fsSL https://github.com/rocker-org/rocker-versioned2/raw/master/scripts/install_R_source.sh | sh
-curl -fsSL https://github.com/rocker-org/rocker-versioned2/raw/master/scripts/setup_R.sh | sh
+curl -fsSL https://github.com/rocker-org/rocker-versioned2/raw/master/scripts/install_R_source.sh | bash
+curl -fsSL https://github.com/rocker-org/rocker-versioned2/raw/master/scripts/setup_R.sh | bash
 
 sudo apt-get install gdebi
 wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.09.1-494-amd64.deb
 gdebi rstudio-2023.09.1-494-amd64.deb
 
 # Tailscale has been awesome for homelab/vpn
-curl -fsSL https://tailscale.com/install.sh | sh
+curl -fsSL https://tailscale.com/install.sh | bash
 
 # Install logiops for mouse stuff
 sudo apt-get install -q build-essential cmake pkg-config libevdev-dev libudev-dev libconfig++-dev libglib2.0-dev
