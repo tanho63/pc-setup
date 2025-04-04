@@ -1,0 +1,46 @@
+{
+    // make default keybinds rstudio-like
+    "rstudio.keymap.enable": true,
+    // font settings
+    "editor.fontFamily": "'Jetbrains Mono', 'monospace', monospace",
+    "editor.fontLigatures": true,
+    // color theme settings
+    "workbench.colorTheme": "Default Dark Modern",
+    // ctrl+n opens a new file in R by default
+    "files.defaultLanguage": "r",
+    // add vertical line at 80 characters
+    "editor.rulers": [
+        80
+    ],
+    // handle newline saving adapted from
+    // https://rfdonnelly.github.io/posts/sane-vscode-whitespace-settings/
+    "files.insertFinalNewline": true,
+    "editor.renderFinalNewline": "dimmed",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    // also render trailing whitespace, since it'll get trimmed
+    "editor.renderWhitespace": "trailing",
+    // formatting
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    // adds lines for the current bracket you're in
+    "editor.guides.bracketPairs": "active",
+    // and rainbow brackets
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    // pretty cursor
+    "editor.cursorBlinking": "phase",
+    "editor.cursorStyle": "line",
+    // otherwise opening two files closes the first ???
+    "workbench.editor.enablePreview": false,
+    // adds more lines to the file tab
+    "workbench.tree.renderIndentGuides": "always",
+    // settings editor json with "ctrl+,"
+    "workbench.settings.editor": "json",
+    // assorted other
+    "remote.tunnels.access.preventSleep": true,
+    "remote.downloadExtensionsLocally": true,
+    "workbench.startupEditor": "none",
+    "remote.autoForwardPortsSource": "hybrid",
+    "workbench.activityBar.location": "top",
+    "git.autofetch": true,
+}
