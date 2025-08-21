@@ -1,16 +1,17 @@
 {
     // make default keybinds rstudio-like
-    "rstudio.keymap.enable": true,
+    "workbench.keybindings.rstudioKeybindings": true,
     // font settings
     "editor.fontFamily": "'Jetbrains Mono', 'monospace', monospace",
+    "console.fontFamily": "'JetBrains Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
-    // color theme settings
-    "workbench.colorTheme": "Default Dark Modern",
+    "console.fontLigatures": true,
     // ctrl+n opens a new file in R by default
     "files.defaultLanguage": "r",
     // add vertical line at 80 characters
     "editor.rulers": [
-        80
+        80,
+        120
     ],
     // handle newline saving adapted from
     // https://rfdonnelly.github.io/posts/sane-vscode-whitespace-settings/
@@ -22,7 +23,7 @@
     "editor.renderWhitespace": "trailing",
     // formatting
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
+    // "editor.formatOnSave": true,
     // adds lines for the current bracket you're in
     "editor.guides.bracketPairs": "active",
     // and rainbow brackets
@@ -43,4 +44,14 @@
     "remote.autoForwardPortsSource": "hybrid",
     "workbench.activityBar.location": "top",
     "git.autofetch": true,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "workbench.externalUriOpeners": {},
+    "workbench.commandPalette.experimental.suggestCommands": true,
+    "oneDarkPro.vivid": true,
+    "positron.plots.darkFilter": "off",
+    "files.associations": {
+        "renv.lock": "json"
+    },
+    "workbench.colorTheme": "Default Positron Dark",
 }
