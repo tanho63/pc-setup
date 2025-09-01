@@ -1,6 +1,9 @@
 {
     // make default keybinds rstudio-like
     "workbench.keybindings.rstudioKeybindings": true,
+    // theme
+    "workbench.colorTheme": "Default Dark Modern",
+    "positron.plots.darkFilter": "off",
     // font settings
     "editor.fontFamily": "'Jetbrains Mono', 'monospace', monospace",
     "console.fontFamily": "'JetBrains Mono', 'monospace', monospace",
@@ -37,21 +40,22 @@
     "workbench.tree.renderIndentGuides": "always",
     // settings editor json with "ctrl+,"
     "workbench.settings.editor": "json",
-    // assorted other
+    // remote ssh stuff
     "remote.tunnels.access.preventSleep": true,
     "remote.downloadExtensionsLocally": true,
-    "workbench.startupEditor": "none",
     "remote.autoForwardPortsSource": "hybrid",
+    // workbench behaviours
+    "workbench.startupEditor": "none",
     "workbench.activityBar.location": "top",
-    "git.autofetch": true,
-    "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "terminal.integrated.defaultProfile.linux": "zsh",
     "workbench.externalUriOpeners": {},
     "workbench.commandPalette.experimental.suggestCommands": true,
-    "oneDarkPro.vivid": true,
-    "positron.plots.darkFilter": "off",
+    // git behaviours
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "always",
+    // assorted other
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.defaultProfile.linux": "zsh",
     "files.associations": {
         "renv.lock": "json"
     },
-    "workbench.colorTheme": "Default Positron Dark",
 }
